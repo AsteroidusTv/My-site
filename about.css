@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap');
+
+
+* {
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #202020;
+
+}
+
+.container {
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+
+}
+
+.container .progress {
+
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	color: white;
+	background: #303030 linear-gradient(to right, transparent 50%, var(--clr) 0);
+	animation-name: increase-i;
+  	animation-duration: 3s;
+  	animation-fill-mode: forwards;
+	
+	
+
+}
+
+.container .progress h3 {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+	z-index: 1;
+	font-weight: 500;
+
+}
+
+.container .progress h3 span {
+
+	font-size: 0.65em;
+	font-weight: 400;
+
+}
+
+.container .progress h4 {
+
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	font-weight: 500;
+	color: var(--clr);
+	text-transform: uppercase;
+
+
+}
+
+.container .progress::before {
+
+	content: "";
+	display: block;
+	height: 100%;
+	margin-left: 50%;
+	transform-origin: left;
+	border-radius: 0 100% 100% 0/50%;
+
+}
+
+.container .progress::after {
+
+	content: "";
+	position: absolute;
+	inset: 10px;
+	border-radius: 50%;
+	background-color: #222;
+
+}
+
+.container .progress::before {
+
+	background: var(--clr);
+	transform: rotate(calc(((var(--i) - 50) * 0.01turn )));
+
+}
+
+/* If value < 50% */
+
+.container .progress.less::before {
+
+	background: #303030;
+	width: 50.5%;
+	transform: rotate(calc(((var(--i) - 0) * 0.01turn )));
+
+
+}
+
+@keyframes increase-i {
+  from {
+    --i: 0;
+  }
+  to {
+    --i: 100;
+  }
+}

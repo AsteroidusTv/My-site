@@ -1,76 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
-  <title>Asteroidus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>New-aster</title>
 </head>
-
 <body>
-   
-    <!-- Button for toggle dark/light mode -->
-    <button id="dark-mode-toggle" class="moon"><div><img class="lefter" id="logo2" src="moon.png" alt="moonlogo"></button>
 
-    <!-- Large title in center of page -->  
-    <div class="title"><h1>Asteroidus</h1></div>
-
-    <!-- Github button in center of page -->
-    <div class="center"><button class="ut"><a href="https://github.com/AstroidusTv"><img id="logo1" src="github-black.png" alt="githublogo" class="git"></a></button></div>
+    <div class="center">
     
-    <!-- Info unter github button -->
-    <div class="info"><p>Contact me at asteroidus@protonmail.com</p> <p>My website : rmbi.ch/cescosite</p></div>
-    
-    <div class="top"><button class="ut" ><a href="#logo4"><img src="whiteend.png" class="top" id="logo3"></a></button></div>
+        <h1 class="title_aster">Asteroidus</h1>
 
-    <br class="space">
+        <div class="buttons">
+            
+            <button class="home_button" onclick="window.location.href='project.html';"><p class="text_button">Projects</p></button>
+            <button class="home_button" onclick="window.location.href='about.html';"><p class="text_button">About me</p></button>
 
-     <!--  Project -->
-    <div class="block" >
-    <img  class="cescosite" src="hellop.png" onclick="window.open('https://rmbi.ch/cescosite/cescosite.php')" height="300px">
+        </div>
+        
     </div>
-
-    <!-- Button to go on top of page -->
-    <div class="top"><button class="ut" ><a href="#top"><img src="whitetop.png", class="top" id="logo4"></a></button></div>
-
-
-   
-      <!--  This JS code can toggle dark/light mode. Always put it at the end !!! -->
-      <script>
-      let darkMode = localStorage.getItem('darkMode'); 
-      if (darkMode === 'enabled') {
-        document.body.classList.add('dark-mode');
-        document.getElementById("logo1").src = "github.png";
-        document.getElementById("logo2").src = "moon.png";
-        document.getElementById("logo3").src = "whiteend.png";
-        document.getElementById("logo4").src = "whitetop.png";
-      }
-
-      const darkModeToggle = document.getElementById('dark-mode-toggle');
- 
-      darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('darkMode', 'enabled');
-          document.getElementById("logo1").src = "github.png";
-          document.getElementById("logo2").src = "moon.png";
-          document.getElementById("logo3").src = "whiteend.png";
-          document.getElementById("logo4").src = "whitetop.png";
-        } else {
-          localStorage.setItem('darkMode', null);
-          document.getElementById("logo1").src = "github-black.png";
-          document.getElementById("logo2").src = "sun.png";
-          document.getElementById("logo3").src = "blackend.png";
-          document.getElementById("logo4").src = "blacktop.png";
-        }
-      });
-    </script>
-    </script>
-
-
-  </body>
+</body>
 </html>
+
