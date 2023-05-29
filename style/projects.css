@@ -179,6 +179,12 @@ body {
 
     }
 
+    .project-img:hover {
+
+        background: transparent;
+
+    }
+
 }
 
 @media screen and (max-width: 400px) {
