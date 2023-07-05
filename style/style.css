@@ -35,6 +35,16 @@ body {
 
 .main-title {
 
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate;  
     font-size: 120px;
     color: var(--text-color);
 
@@ -57,7 +67,6 @@ body {
 
 .main-button::before  {
   
-    
     content: "";
     border-radius: 50px;
     top: 50%;
@@ -92,6 +101,22 @@ body {
         opacity: 100%;
 
     }
+
+}
+
+@keyframes cursor {
+  
+    50% {
+
+        border-color: transparent;
+  
+    }
+
+}
+
+@keyframes typing {
+    
+    from { width: 0 }
 
 }
 
