@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='./styles/style.css'>
+    <link rel='stylesheet' type='text/css' href='./styles/header.css'>
+    <link rel='stylesheet' type='text/css' href='./styles/scrollTop.css'>
+
+    <script type='text/javascript' src='./scripts/navBar.js' defer></script>
+    <script type='text/javascript' src='./scripts/changeTheme.js' defer></script>  
+    <script type='text/javascript' src='./scripts/scrollTop.js' defer></script>      
+    <title>astersite</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title" id="headerTitle">Asteroidus</h1>
+            <div class="separator-line" id="separatorLine"></div>
+            <div class="header-links" id="headerLinks">
+                <a class="navigation-link" id="navigationLink" href="#top">About</a>
+                <a class="navigation-link" id="navigationLink" href="#middle">Projects</a>
+                <a class="navigation-link" id="navigationLink" href="#bottom">Other</a>
+                <button class="theme-button" id="themeButton">
+                    <img class="theme-icon" id="themeIcon" src="./svgs/moon.svg" alt="theme icon">
+                </button>
+            </div>
+                
+            <!-- Hamburger menu -->
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+        <main>
+            <button class="scroll-top" id="scrollTop"></button>
+            <section class="about">
+                <h1>Hello !</h1>
+                <p class="description">My name is Asteroidus i love <span>coding</span> and and I like to surpass myself, <span>always</span> doing <span>crazier</span> and <span>crazier</span> projects</p>
+            </section>
+            <section class="projects"></section>
+            <section class="other"></section>  
+        </main>
+    </body>
+</html> 
