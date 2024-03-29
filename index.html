@@ -6,21 +6,23 @@
     <link rel='stylesheet' type='text/css' href='./styles/style.css'>
     <link rel='stylesheet' type='text/css' href='./styles/header.css'>
     <link rel='stylesheet' type='text/css' href='./styles/scrollTop.css'>
+    <link rel='stylesheet' type='text/css' href='./styles/grid.css'>
 
     <script type='text/javascript' src='./scripts/navBar.js' defer></script>
     <script type='text/javascript' src='./scripts/changeTheme.js' defer></script>  
-    <script type='text/javascript' src='./scripts/scrollTop.js' defer></script>
-    <script type='text/javascript' src='./scripts/caroussel.js' defer></script>          
-    <title>astersite</title>
+    <script type='text/javascript' src='./scripts/scrollTop.js' defer></script>    
+    <script type='text/javascript' src='./scripts/animations.js' defer></script>
+    <script type='text/javascript' src='./scripts/anchor.js' defer></script>   
+    <title>Aster</title>
     </head>
     <body>
         <header>
             <h1 class="header-title" id="headerTitle">Asteroidus</h1>
             <div class="separator-line" id="separatorLine"></div>
             <div class="header-links" id="headerLinks">
-                <a class="navigation-link" id="navigationLink" href="#top">About</a>
-                <a class="navigation-link" id="navigationLink" href="#middle">Projects</a>
-                <a class="navigation-link" id="navigationLink" href="#bottom">Other</a>
+                <a class="navigation-link nav1" id="navigationLink" href="#1">About</a>
+                <a class="navigation-link nav2" id="navigationLink" href="#2">Projects</a>
+                <a class="navigation-link" id="navigationLink" href="#3">Other</a>
                 <button class="theme-button" id="themeButton">
                     <img class="theme-icon" id="themeIcon" src="./svgs/moon.svg" alt="theme icon">
                 </button>
@@ -33,22 +35,65 @@
                 <div class="bar"></div>
             </div>
         </header>
-        <main>
+        <main class="main-main">
             <button class="scroll-top" id="scrollTop"></button>
-            <section class="about">
+            
+            <!-- About section -->
+            <section id="about" class="about">
                 <h1>Hello !</h1>
                 <p class="description">My name is Asteroidus i love <span>coding</span> and and I like to surpass myself, <span>always</span> doing <span>crazier</span> and <span>crazier</span> projects</p>
             </section>
-            <section class="projects" id="hello">
-                <div class="carousel" id="carousel">
-                    <div class="card">Hello</div>
-                    <div class="card scale-card">Hi</div>
-                    <div class="card">Hey</div>
-                </div>
-                <button id="test">Hello</button>
+            
+            <!-- Projects section -->
+            <section id="projects" class="projects">
+                <article>
+                    <div class="projects-grid">
+                        <div class="grid grid-1">
+                            <main class="project-main">
+                                <h1 class="project-title">CNPS</h1>
+                                <p class="description-title">Create New Project Simply (CNPS) allows us to easily create your projects with a structured file and templates directly made. CNPS supports git. You can use with CNPS, Rust, Python, Html, Go, Lua, Assembly. More languages will soon be supported !</p>
+                            </main>
+                            <footer class="project-footer">
+                                <button class="visit" onclick="location.href='https://github.com/asteroidustv/cnps'">Visit</button>
+                            </footer>
+                        </div>
+                        <div class="grid grid-2">
+                            <main class="project-main">
+                                <h1 class="project-title">My website</h1>
+                                <p class="description-title more">The site you are currently on.</p>
+                            </main>
+                            <footer class="project-footer">
+                                <button class="visit" onclick="location.href='https://github.com/asteroidustv/cnps'">Visit</button>
+                            </footer>
+                        </div>
+                        <div class="grid grid-3">
+                            <main class="project-main">
+                                <h1 class="project-title">CESCO</h1>
+                                <p class="description-title">Cesco is a free an opensource social network desinged for our School. I develop it with <a href="https://github.com/judemont">Judemont</a>
+                                </p>
+                            </main>
+                            <footer class="project-footer">
+                                <button class="visit" onclick="location.href='https://github.com/asterjdm/cesco'">Visit</button>
+                            </footer>
+                        </div>
+                        <div class="grid grid-4">
+                            <h1 class="projects-main-title">PROJECTS</h1>
+                        </div>
+                        <div class="grid grid-5">
+                            <main class="project-main">
+                                <h1 class="project-title">GUI-CNPS</h1>
+                                <p class="description-title">Create New Project Simply with a graphic interface build with tauri !</p>
+                            </main>
+                            <footer class="project-footer">
+                                <button class="visit" onclick="location.href='https://github.com/asteroidustv/gui-cnps'">Visit</button>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
             </section>
 
-            <section class="other"></section>  
+            <!-- Other section section -->
+            <section id="3" class="other"></section>  
         </main>
     </body>
 </html> 

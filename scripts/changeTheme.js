@@ -70,4 +70,3 @@ if (storedTheme !== null) {
 }
 setThemeMode(isMoon);
 
-

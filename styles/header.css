@@ -12,6 +12,7 @@ header {
     user-select: none;
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,1);
     background-color: var(--header-background-color);
+    z-index: 2;
 }
 
 header.is-hamburger-active{
@@ -27,7 +28,7 @@ header.is-hamburger-active{
 }
 
 .header-title.is-hamburger-active {
-    transform: translateY(-3.5px);
+    transform: translateY(-4px);
 }
 
 /* Header separator styles */
