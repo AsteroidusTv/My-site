@@ -9,9 +9,10 @@
 
 
 .projects-grid div {
-    background-color: white;
+    background-color: var(--header-background-color);
     border-radius: 15px;
     padding: 10px;
+    color: var(--impairs-section-color);
 }
 
 .grid {
@@ -86,12 +87,12 @@
 
 .visit {
     margin-top: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--impairs-section-color);
     border-radius: 30px;
     width: 160px;
     height: 45px;
-    color: black;
-    background-color: white;
+    color: var(--impairs-section-color);
+    background-color: var(--header-background-color);
     cursor: pointer;
     transition: 0.3s;
 }
