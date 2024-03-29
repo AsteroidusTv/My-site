@@ -79,5 +79,9 @@ article {
         padding-top: 3%;
         padding-bottom: 3%;
     }
+
+    main section {
+        height: calc(100dvh - 80px);
+    }
 }
 
