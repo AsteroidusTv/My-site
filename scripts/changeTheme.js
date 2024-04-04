@@ -1,12 +1,12 @@
 const root = document.documentElement;
 
 const isMoonKey = 'isMoon';
-let isMoon = true
+let isMoon = true;
 
 // Themes
 const themes = {
   moon: {
-    iconSrc: './svgs/moon.svg',
+    iconSrc: './images/svgs/moon.svg',
     iconAlt: 'moon icon',
     shadowColor: '#000000bf',
     componentColor: '#000000',
@@ -20,7 +20,7 @@ const themes = {
     arrowBackground: '#000000',
   },
   sun: {
-    iconSrc: './svgs/sun.svg',
+    iconSrc: './images/svgs/sun.svg',
     iconAlt: 'sun icon',
     shadowColor: '#FFFFFFbf',
     componentColor: '#FFFFFF',
@@ -55,12 +55,13 @@ function setThemeMode(isMoon) {
   root.style.setProperty('--arrow-background', theme.arrowBackground);
 
   localStorage.setItem(isMoonKey, isMoon);
+  11
 }
 
 // Event Listeners
 themeButton.addEventListener('click', () => {
-    isMoon = !isMoon;
-    setThemeMode(isMoon);
+  isMoon = !isMoon;
+  setThemeMode(isMoon);
 });
 
 // Check stored theme and apply it
@@ -69,4 +70,3 @@ if (storedTheme !== null) {
   isMoon = JSON.parse(storedTheme);
 }
 setThemeMode(isMoon);
-

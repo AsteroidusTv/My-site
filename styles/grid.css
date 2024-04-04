@@ -98,8 +98,9 @@
 }
 
 .visit:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--impairs-section-color);
+    color: var(--pairs-section-color);
+    /* transform: scale(2); */
 }
 
 @media screen and (max-width: 1000px) {

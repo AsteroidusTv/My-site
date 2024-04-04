@@ -1,12 +1,70 @@
 main section:nth-child(2) {
     color: var(--impairs-section-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-
-main section h1 {
-    font-size: 100px;
+.presentation-card {
+    margin-left: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 350px;
+    background: black;
 }
 
-.description span {
-    text-decoration: underline;
+.logo {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-size: 50px;
+}
+
+.presentation-description {
+    color: white;
+}
+
+.goals {
+    margin-right: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 600px;
+    width: calc(100vw - 350px);
+}
+
+@media screen and (max-height: 720px) {
+    .presentation-card {
+        margin-left: 0px;
+        border-radius: 0px;
+        height: 100%;
+    }
+
+    .goals {
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .presentation-card {
+        width: 50%;
+    }
+
+    .logo {
+        width: calc(80%);
+    }
+
+    .name {
+        font-size: 7.2vw;
+    }
+
+    .presentation-description {
+        font-size: 3vw;
+    }
 }
