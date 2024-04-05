@@ -35,8 +35,56 @@ main section:nth-child(2) {
     margin-right: 20px;
     border: 3px solid black;
     border-radius: 15px;
+    display: flex;
+    gap: 10px;
     height: 600px;
     width: calc(100vw - 350px);
+}
+
+.about-me, .my-networks, .my-organisations{
+    padding: 10px;
+    width: calc(100% / 3);
+    /* background-color: red; */
+    position: relative;
+}
+
+.goals-header {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    font-size: 3vh;
+    color: white;
+    background: black;
+}
+
+.goals-contents {
+    font-size: 1.8vh;
+    margin-top: 5px;
+}
+
+.goals-imgs {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    gap: 10px;
+}
+
+.about-me-imgs {
+    width: calc(50% - 10px);
+}
+
+.networks {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.networks img {
+    cursor: pointer;
+    width: 100%;
 }
 
 @media screen and (max-height: 720px) {
