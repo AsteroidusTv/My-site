@@ -67,27 +67,40 @@ main section:nth-child(2) {
 
 .goals-imgs {
     display: flex;
+}
+
+.goals-imgs.networks {
     position: absolute;
-    bottom: 10px;
-    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .about-me-imgs {
-    width: calc(50% - 10px);
+    width: 100px;
 }
 
 .networks {
     gap: 10px;
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
+    position: relative;
+}
+
+.networks a {
+    text-align: center;
 }
 
 .networks img {
-    cursor: pointer;
-    width: 100%;
+    width: 8vw;
 }
 
 @media screen and (max-height: 720px) {
+    main section:nth-child(2) {
+        gap: 0;
+    }
+    
     .presentation-card {
         margin-left: 0px;
         border-radius: 0px;
@@ -95,7 +108,27 @@ main section:nth-child(2) {
     }
 
     .goals {
+        gap: 0;
         border: 0;
+        border-radius: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .about-me, .my-networks, .my-organisations{
+        padding: 0;
+    }
+
+    .about-me {
+        border-right: 2px solid white;
+    }
+
+    .my-organisations {
+        border-left: 2px solid white;
+    }
+
+    .goals-header {
+        border-radius: 0;
     }
 }
 
