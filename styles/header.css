@@ -1,0 +1,40 @@
+.main-header {
+    border-radius: 10px;
+    width: calc(80%);
+    height: 60px;
+    /* margin: 20px 20px 0px 20px; */
+    border: 2px solid white;
+}
+
+.main-header.scrolled-up {
+    animation: scroll-up 0.5s;
+}
+
+.main-header.scrolled-down {
+    position: fixed;
+    animation: scroll-down 0.5s;
+    transform: translateY(10px);
+}
+
+
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+

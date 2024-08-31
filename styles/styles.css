@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::root {
+    --br: 10px;
+
+    /* Border */
+    --bd-sz: 2px;
+    --bd-st: solid;
+    --bd-cl: white;
+}
+
+body {
+    background: #0f0f0f;
+}
