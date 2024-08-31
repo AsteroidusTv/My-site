@@ -1,9 +1,16 @@
 .main-header {
+    margin: 0 auto;
+    border: 2px solid white; /*Remove later*/
     border-radius: 10px;
-    width: calc(80%);
-    height: 60px;
-    /* margin: 20px 20px 0px 20px; */
-    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    width: 85%;
+    height: 80px;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    background: rgba(14, 0, 0, 0.21);
 }
 
 .main-header.scrolled-up {
@@ -12,29 +19,27 @@
 
 .main-header.scrolled-down {
     position: fixed;
+    left: 50%;
     animation: scroll-down 0.5s;
-    transform: translateY(10px);
+    transform: translate(-50%, 33%);
 }
-
-
 
 @keyframes scroll-up {
     0% {
-        transform: translateY(10px);
+        transform: translate(-50%, 33%);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translate(-50%, 0px);
     }
 }
 
 @keyframes scroll-down {
     0% {
-        transform: translateY(0px);
+        transform: translate(-50%, 0px);
     }
 
     100% {
-        transform: translateY(10px);
+        transform: translate(-50%, 33%);
     }
 }
-

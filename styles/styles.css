@@ -14,6 +14,11 @@
     --bd-cl: white;
 }
 
+img {
+    margin-top: 200px;
+}
+
 body {
     background: #0f0f0f;
+    background-repeat: no-repeat;
 }
