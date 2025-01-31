@@ -131,20 +131,6 @@
 
 @media screen and (max-width: 432px) {
     .project-title {
-        font-size: 1.8rem;
-    }
-
-    .project-authors {
-        font-size: 1.2rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 432px) {
-    .project-title {
         font-size: 1.55rem;
     }
 
