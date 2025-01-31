@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    line-height: 1;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--middle-color) 40%, var(--secondary-color) 100%);
+}
+
+.home-title {
+    font-family: "Lily Script One";
+    font-size: 5rem;    
+}
+
+.home-text {
+    font-size: 1.95rem;
+}
+
+.home-button {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+.home-button-icon {
+    display: block;
+    margin-top: 2px;
+    height: 40%;
+}
+
+@media screen and (max-width: 550px) {
+    .home-title{
+        font-size: 3.5rem;
+    }
+    .home-text{
+        font-size: 1.35rem;
+    }
+}

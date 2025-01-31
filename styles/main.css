@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #09122C;
+    --middle-color: #1D092C;
+    --secondary-color: #3B1C32;
+    --text-color: #FFFFFF;
+    --blur: 20px;
+    /* Border settings */
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #FFFFFF33;
+    --border-radius: 20px;
+}
+
+@font-face {
+    font-family: "Lily Script One";
+    src: url(../fonts/LilyScriptOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+

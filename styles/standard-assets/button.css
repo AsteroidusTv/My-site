@@ -1,0 +1,35 @@
+:root {
+    --standard-button-padding: 5px;
+    --standard-button-gap: 10px;
+    --standard-button-background-color: #FFFFFF1a;
+    --standard-button-hover-background-color: #FFFFFF2a;
+    --standard-button-font-size: 1.2rem;
+}
+
+.standard-button {
+    border: var(--border-width) var(--border-style) var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--standard-button-padding);
+    display: flex;
+    gap: var(--standard-button-gap);
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(var(--blur));
+    background-color: var(--standard-button-background-color);
+    font-size: var(--standard-button-font-size);
+    cursor: pointer;
+}
+
+.standard-button:hover {
+    background-color: var(--standard-button-hover-background-color);
+}
+
+.standard-button-icon {
+    display: none;
+}
+
+@media (pointer: coarse) {
+    .standard-button:hover:hover {
+        background-color: var(--standard-button-background-color);
+    }
+}
