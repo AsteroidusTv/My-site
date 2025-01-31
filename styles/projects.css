@@ -153,6 +153,12 @@
     }
 }
 
+@media screen and (max-width: 361px) {
+    .project-description {
+        font-size: 0.8rem;
+    }
+}
+
 @media (pointer: coarse) {
     .project-right:hover {
         width: 30%;
