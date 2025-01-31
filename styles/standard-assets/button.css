@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
     background-color: var(--standard-button-background-color);
     font-size: var(--standard-button-font-size);
     cursor: pointer;

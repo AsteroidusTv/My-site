@@ -12,6 +12,7 @@
     justify-content: center;
     transition: transform 0.5s ease;
     backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
     background-color: var(--header-background);
     z-index: 2;
   }

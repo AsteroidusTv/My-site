@@ -11,7 +11,7 @@
 .project-ticker-content {
     display: flex;
     width: max-content;
-    animation: moveTicker 20s linear infinite;
+    animation: moveTicker 40s linear infinite;
 }
 
 .project-ticker-content-text {
